@@ -1,20 +1,22 @@
-import random
+def taskOne(text):
+    '''
+    Hammer's task one - counting the of aeiou in a piece of string
+    return the number of found
+    '''
+    detectList = ["a", "e", "i", "o", "u"]
+    counter = 0
+    for char in text:
+        if char in detectList:
+            counter +=1
 
-text = './news.txt'
-f = open(text, "r")
-print(f.read())
-
-
-def hammer_pickOneMemeber():
-    '''example function'''
-
-    teamJDE = ['hammer', 'billy', 'chistina']
-    result = random.sample(teamJDE, 1)
-    return result
-
+    return counter
 
 if __name__ == "__main__":
-    print(hammer_pickOneMemeber())
+
+    with open(text, 'r') as ff:
+    print(content)
+
+    print (taskOne(content))
     # print(taskOne())
     # print(taskTwo())
     # print(taskThree())
