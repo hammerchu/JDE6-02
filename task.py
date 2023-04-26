@@ -2,7 +2,7 @@ import random
 
 text = './news.txt'
 f = open(text, "r")
-print(f.read())
+print(f.readlines())
 
 
 def hammer_pickOneMemeber():
